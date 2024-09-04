@@ -1,6 +1,13 @@
+import Header from "./components/Header"
+import InputGroup from "./components/InputGroup/InputGroup"
+
 function App() {
   return (
-    <h1>React Investment Calculator</h1>
+    <>
+      <Header />
+
+      <InputGroup />
+    </>
   )
 }
 
