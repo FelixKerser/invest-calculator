@@ -1,8 +1,10 @@
-export default function Input() {
+export default function Input({ Label, onChange }) {
     return (
         <>
-            <label htmlFor="">Example</label>
-            <input type="text" />
+            <label htmlFor="">{Label}</label>
+            <input type="text" onChange={(event) => {
+                onChange(event)
+            }} />
         </>
     )
 }
